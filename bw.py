@@ -15,7 +15,7 @@ url = out.split('Share results: ', 1) [1]
 #Download score image and put it in the widget
 image = urllib.URLopener()
 #image.retrieve(url,"/var/www/html/plugins/widget/core/images/bw.png")
-image.retrieve(url,"/home/matt/Images/bw.png")
+image.retrieve(url,"/var/www/html/bw.png")
 
-process = subprocess.Popen(["sudo", "cp", "/home/matt/Images/bw.png", "/var/www/html/plugins/widget/core/images/bw.png"], stdout=subprocess.PIPE)
+process = subprocess.Popen(["sudo", "cp", "/var/www/html/bw.png", "/var/www/html/plugins/widget/core/images/bw.png"], stdout=subprocess.PIPE)
 out2, err = process.communicate()
